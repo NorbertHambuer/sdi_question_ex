@@ -9,10 +9,10 @@ app.config['SQLALCHEMY_DATABASE_URI'] = 'postgres+psycopg2://mjmhyauqsdypod:57b9
 #app.config['SQLALCHEMY_DATABASE_URI'] = 'postgres+psycopg2://postgres:ad@localhost:5432/chatbot-generator'
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 
-db = SQLAlchemy(app)
-
-migrate = Migrate(app, db)
-manager = Manager(app)
+# db = SQLAlchemy(app)
+#
+# migrate = Migrate(app, db)
+# manager = Manager(app)
 
 @app.route('/')
 def hello_world():
@@ -21,4 +21,5 @@ def hello_world():
 
 if __name__ == '__main__':
     # app.run()
-    manager.run()
+    #manager.run()
+    print("asd")
