@@ -298,4 +298,4 @@ function (_Component4) {
 
 login("admin","ad");
 const domContainer1 = document.querySelector('#chatbot_room');
-ReactDOM.render(e(Chatbot,{user_id: 1, bot_id: 38}), domContainer1);
+ReactDOM.render(e(Chatbot,{user_id: 1, bot_id: 39}), domContainer1);
