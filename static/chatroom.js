@@ -297,5 +297,6 @@ function (_Component4) {
 }(React.Component);
 
 login("admin","ad");
+get_bot_id();
 const domContainer1 = document.querySelector('#chatbot_room');
-ReactDOM.render(e(Chatbot,{user_id: 1, bot_id: 39}), domContainer1);
+ReactDOM.render(e(Chatbot,{user_id: 1, bot_id: localStorage.getItem('bot_id')}), domContainer1);

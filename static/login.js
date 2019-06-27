@@ -14,3 +14,11 @@ function login(user, password){
                 }
             });
 }
+
+function get_bot_id(){
+        axios.get('https://flask-chatbot-generator.herokuapp.com/get_bot_id?bot_name=SDI_example&user_id=1', {withCredentials: true})
+            .then(res => {
+                console.log(res);
+				localStorage.setItem('bot_id', res.data.id);
+            });
+}
